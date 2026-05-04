@@ -4,36 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticia</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li>16 Abr, 2026</li>
-                <li>Argentina</li>
-                <li>Colombia</li>
-                <li>España</li>
-                <li>México</li>
-                <li>Perú</li>
-                <li>Centroamérica</li>
-                <li>Mundo</li>
+                <li class="nav-bold">Argentina</li>
+                <li class="nav-bold">Colombia</li>
+                <li class="nav-bold">España</li>
+                <li class="nav-bold">México</li>
+                <li class="nav-bold">Perú</li>
+                <li class="nav-bold">Centroamérica</li>
+                <li class="nav-bold">Mundo</li>
                 <li>
-                    <a href="#">REGISTRARME</a>
+                    <a id="button-registro" href="#">REGISTRARME</a>
+                    
                 </li>
                 <li>
-                    <a href="#">INICIAR SESION</a>
+                    <a id="button-inicio_sesion" href="#">INICIAR SESION</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <img src="https://www.infobae.com/assets/images/logos/logo_infobae_naranja.svg" alt="">
+    <div id="div-logo">
+        <img id="logo" src="https://www.infobae.com/assets/images/logos/logo_infobae_naranja.svg" alt="">
+    </div>
 
     <hr>
     <div>
         <p>VIVO Guerra en Medio Oriente Hace 19 minutos | Trends Mauro Icardi Estados Unidos Ingresos Brutos Esteban Mahiques Foto Estudio Luisita</p>
     </div>
     <hr>
+
+    <p>https://www.infobae.com/salud/2026/04/16/como-reemplazar-el-pan-en-las-comidas-ideas-saludables-para-una-dieta-nutritiva/</p>
 
     <p>SALUD ></p>
 
@@ -42,17 +48,31 @@
             <h1>Cómo reemplazar el pan en las comidas: ideas saludables para una dieta nutritiva</h1>
             <h2>Una variedad de motivos respaldan la importancia de elegir otros carbohidratos para reducir riesgos y sentirse mejor cada día</h2>
             <hr>
-            <p>Por Ramiro Manera                                <a href="#">Seguir en</a></p>
+            <p>Por Ramiro Manera <a href="#">Seguir en</a></p>
             <hr>
-            <p>16 Abr, 2026 06:00 a.m. AR <a href="#">F</a><a href="#">W</a><a href="#">X</a><a href="#">in</a><a href="#">t</a><a href="#">Guardar</a></p>
+            <p class="social-inicio">
+                <span>
+                    16 Abr, 2026 06:00 a.m. AR 
+            
+                </span>
+                <span>
+                    <a class="button-social" href="#">F</a>
+                    <a class="button-social" href="#">W</a>
+                    <a class="button-social" href="#">X</a>
+                    <a class="button-social" href="#">in</a>
+                    <a class="button-social" href="#">t</a>
+                    |
+                    <a class="button" href="#">Guardar</a>
+                </span>
+            </p>
             <figure>
-                <img src="https://www.infobae.com/resizer/v2/WG74UF5G6NADDO2KTKVR7HPX6A.jpg?auth=216810237bfe0245a789d2fbcace8763b7dd4a39813d8d1e80a0095aa1ce013f&smart=true&width=992&height=556&quality=85" alt="">
+                <img class="img-noticia" src="https://www.infobae.com/resizer/v2/WG74UF5G6NADDO2KTKVR7HPX6A.jpg?auth=216810237bfe0245a789d2fbcace8763b7dd4a39813d8d1e80a0095aa1ce013f&smart=true&width=992&height=556&quality=85" alt="">
                 <figcaption>
                     La reducción en el consumo de pan blanco es clave para prevenir enfermedades como diabetes tipo 2 y problemas cardiovasculares (Imagen Ilustrativa Infobae)
                 </figcaption>
             </figure>
-            <p>El consumo diario de pan forma parte de la rutina alimentaria de millones de personas en todo el mundo. Sin embargo, diversos especialistas en nutrición advierten sobre la importancia de buscar alternativas al pan tradicional para mantener una dieta equilibrada y saludable. Según reportes de BBC News, la reducción en la ingesta de pan blanco puede contribuir a mejorar la calidad nutricional de las comidas y prevenir problemas de salud asociados al consumo excesivo de harinas refinadas.</p>
-            <p>
+            <p>El consumo diario de pan forma parte de la rutina alimentaria de millones de personas en todo el mundo. Sin embargo, <strong>diversos especialistas en nutrición advierten sobre la importancia de buscar alternativas al pan tradicional para mantener una dieta equilibrada y saludable.</strong> Según reportes de BBC News, la reducción en la ingesta de pan blanco puede contribuir a mejorar la calidad nutricional de las comidas y prevenir problemas de salud asociados al consumo excesivo de harinas refinadas.</p>
+            <div class="publicidad-medio">
                 <span>
                     <img src="https://www.infobae.com/resizer/v2/QPMJJCUKLRCUNEF33XWIMBRG6Q.png?auth=5cbedc928b257970dce4d9c6711bfad24261209cbc91f95d10953961f3e6ce60&smart=true&width=256&height=140&quality=85" alt="">
                 </span>
@@ -60,25 +80,25 @@
                     <p>Te puede interesar:</p>
                     <p><strong>Somnolencia extrema: las claves para distinguir entre hipersomnia idiopática y narcolepsia</strong></p>
                 </span>
-            </p>
+            </div>
             <p><strong>Por qué no es recomendable incluir pan en las comidas diarias</strong></p>
-            <p>El pan blanco, elaborado a partir de harinas refinadas, presenta un bajo aporte de fibra y micronutrientes en comparación con otras fuentes de carbohidratos. De acuerdo con la Organización Mundial de la Salud (OMS), el consumo regular de productos ultraprocesados, entre los que se destaca el pan blanco, puede favorecer el desarrollo de diabetes tipo 2, sobrepeso y enfermedades cardiovasculares.</p>
+            <p>El pan blanco, elaborado a partir de <strong>harinas refinadas</strong>, presenta un bajo aporte de fibra y micronutrientes en comparación con otras fuentes de carbohidratos. De acuerdo con la Organización Mundial de la Salud (OMS), el consumo regular de productos ultraprocesados, entre los que se destaca el pan blanco, puede favorecer el desarrollo de <strong>diabetes tipo 2</strong>, sobrepeso y enfermedades cardiovasculares.</p>
             <figure>
-                <img src="https://www.infobae.com/resizer/v2/3VERJ2KQZVAKBBGHETW6TMDPWE.jpg?auth=c35dd31961bf618f138112d4835b92b54a84e52a591989a1e604e9f5ff946f62&smart=true&width=992&height=556&quality=85" alt="">
+                <img class="img-noticia" src="https://www.infobae.com/resizer/v2/3VERJ2KQZVAKBBGHETW6TMDPWE.jpg?auth=c35dd31961bf618f138112d4835b92b54a84e52a591989a1e604e9f5ff946f62&smart=true&width=992&height=556&quality=85" alt="">
                 <figcaption>
                     Optar por panes elaborados con harinas integrales ayuda a mejorar el aporte de fibra y micronutrientes en la dieta diaria (Imagen Ilustrativa Infobae)
                 </figcaption>
             </figure>
             
-            <p>Un informe citado por The Guardian muestra que una dieta alta en pan blanco puede elevar el índice glucémico de las comidas, lo que genera picos de glucosa y una mayor sensación de hambre a corto plazo. “El pan blanco aporta energía rápida, pero carece de la fibra necesaria para prolongar la saciedad y favorecer la salud digestiva”, explicó la nutricionista María Sánchez al medio británico. Por estas razones, las guías alimentarias recomiendan priorizar otras fuentes de carbohidratos y limitar el consumo de pan refinado.</p>
-            <div>
-                <div>
+            <p>Un informe citado por The Guardian muestra que una dieta alta en pan blanco puede elevar el índice glucémico de las comidas, lo que genera picos de glucosa y una mayor sensación de hambre a corto plazo. “El pan blanco aporta energía rápida, pero carece de la fibra necesaria para prolongar la saciedad y favorecer la salud digestiva”, explicó la nutricionista <strong>María Sánchez</strong> al medio británico. Por estas razones, las guías alimentarias recomiendan priorizar otras fuentes de carbohidratos y limitar el consumo de pan refinado.</p>
+            <div class="publicidad-medio">
+                <span>
                     <img src="https://www.infobae.com/resizer/v2/F2BSFZG3YFHJBDRLP45N7V6ICU.png?auth=c7f597baf1f0c084c2bf41eba5fba7c8cf56f2531c84db0a660994621e4f912b&smart=true&width=256&height=140&quality=85" alt="">
-                </div>
-                <div>
+                </span>
+                <span>
                     <p>Te puede interesar:</p>
                     <p><strong>Carne roja o pollo: un estudio reciente desafía creencias sobre el riesgo metabólico en prediabetes</strong></p>
-                </div>
+                </span>
             </div>
             <p><strong>Alternativas saludables al pan</strong></p>
             <p>Diversos alimentos pueden servir como sustitutos del pan en desayunos, almuerzos y meriendas. A continuación se presentan algunas de las opciones más valoradas por los especialistas.</p>
@@ -88,7 +108,7 @@
             <p>Los <strong>crackers elaborados con harina integral, semillas o legumbres</strong> permiten obtener una textura crujiente similar a la del pan, pero con mayor contenido de fibra y nutrientes. Según la dietista esáñola <strong>Ana Moreno</strong>: “este tipo de productos puede sustituir al pan en cualquier comida y ofrece un perfil nutricional más equilibrado, siempre que se elijan versiones sin azúcares ni grasas añadidas”.</p>
             <p><strong>Tortillas de maíz o trigo integral</strong></p>
             <figure>
-                <img src="https://www.infobae.com/resizer/v2/R4GWP2KW3RC3TDF77GUFYWBQBI.jpg?auth=9ec5745f14bfa8866520ff31b3fa4f32ca0e239dd220765d7eb7f70eef4b2a1a&smart=true&width=992&height=556&quality=85" alt="">
+                <img class="img-noticia" src="https://www.infobae.com/resizer/v2/R4GWP2KW3RC3TDF77GUFYWBQBI.jpg?auth=9ec5745f14bfa8866520ff31b3fa4f32ca0e239dd220765d7eb7f70eef4b2a1a&smart=true&width=992&height=556&quality=85" alt="">
                 <figcaption>
                     Las tortillas de maíz o trigo integral permiten reemplazar el pan en comidas dulces y saladas con mayor valor nutricional y menos aditivos (Imagen Ilustrativa Infobae)
                 </figcaption>
@@ -102,7 +122,7 @@
             <h3>El rol de la avena en la dieta diaria</h3>
             <p>La <strong>avena</strong> ha adquirido relevancia en los últimos años como alternativa al pan debido a su perfil nutricional. Este cereal integral aporta betaglucanos, un tipo de fibra soluble que ayuda a regular los niveles de colesterol y glucosa en sangre, según información publicada por Harvard Medical School. “La avena puede utilizarse en preparaciones dulces y saladas, desde gachas y pancakes hasta panes caseros”, afirmó el médico <strong>John Peterson</strong> en declaraciones recogidas por Reuters.</p>
             <figure>
-                <img src="https://www.infobae.com/resizer/v2/P47FPDKRWNHBJA3HSNZHRFUIOQ.jpg?auth=41faf2588be9c586b83575f206b09669d2d9b0fa944a13b226037fe8b4e68ee7&smart=true&width=992&height=558&quality=85" alt="">
+                <img class="img-noticia" src="https://www.infobae.com/resizer/v2/P47FPDKRWNHBJA3HSNZHRFUIOQ.jpg?auth=41faf2588be9c586b83575f206b09669d2d9b0fa944a13b226037fe8b4e68ee7&smart=true&width=992&height=558&quality=85" alt="">
                 <figcaption>
                     La avena integra la dieta como sustituto del pan, ayudando a regular el colesterol y prolongando la saciedad gracias a su fibra soluble (Imagen Ilustrativa Infobae)
                 </figcaption>
@@ -112,7 +132,7 @@
             <h3>Cuáles son las harinas saludables</h3>
             <p>Optar por <strong>harinas integrales o alternativas</strong> contribuye a mejorar la calidad de la dieta al reemplazar el pan convencional. Entre las opciones recomendadas por nutricionistas se encuentran la harina de avena, la de almendras, la de coco, la de garbanzos y la de centeno integral. Estas harinas, indica un reporte de BBC News, contienen más fibra, proteínas y micronutrientes que las harinas blancas tradicionales.</p>
             <figure>
-                <img src="https://www.infobae.com/resizer/v2/54YGL47S35G5LM434XEKCXDJLU.jpg?auth=e28fccc436994a633a7b16195b1a422f0cd4f70499eb6c3d9922c3c623c08730&smart=true&width=992&height=556&quality=85" alt="">
+                <img class="img-noticia" src="https://www.infobae.com/resizer/v2/54YGL47S35G5LM434XEKCXDJLU.jpg?auth=e28fccc436994a633a7b16195b1a422f0cd4f70499eb6c3d9922c3c623c08730&smart=true&width=992&height=556&quality=85" alt="">
                 <figcaption>
                     Harinas integrales o alternativas como la de avena, almendras, coco y garbanzos mejoran la nutrición en dietas que buscan reemplazar el pan tradicional (Imagen Ilustrativa Infobae)
                 </figcaption>
@@ -121,21 +141,38 @@
             <p>La <strong>harina de avena</strong> destaca por su versatilidad y su contenido de betaglucanos. La <strong>harina de almendras</strong> ofrece grasas saludables y un alto aporte de proteínas, mientras la de <strong>garbanzos</strong> resulta una alternativa sin gluten adecuada para dietas especiales.</p>
             <p>Diversos estudios citados por The Guardian coinciden en que la elección de harinas integrales o de legumbres permite mejorar la salud digestiva y mantener un mejor perfil de lípidos en sangre. Estas opciones, sumadas a una variedad de alimentos frescos, permiten diseñar una alimentación más nutritiva y equilibrada.</p>
             <hr>
-            <p>Compartir nota: <a href="#">f</a><a href="#">w</a><a href="#">x</a><a href="#">in</a><a href="#">t</a></p>
+            <p class="compartir-nota">Compartir nota:
+                <a class="button-social" href="#">f</a>
+                <a class="button-social" href="#">w</a>
+                <a class="button-social" href="#">x</a>
+                <a class="button-social" href="#">in</a>
+                <a class="button-social" href="#">t</a>
+            </p>
             <hr>
         </article>
     </main>
 
-    <div>
+    <div class="seguir-leyendo">
         <p>Seguir leyendo</p>
+        <hr>
         <ul>
-            <li>Salud cardiovascular en la rutina diaria: las estrategias de 7 especialistas para cuidar el corazón</li>
-            <li>El estrés crónico debilita el sistema inmune: cuáles son los síntomas para reconocerlo a tiempo</li>
-            <li>Cuándo la diarrea o el estreñimiento dejan de ser normales: señales de alarma a tener en cuenta</li>
+            <hr>
+            <li>| Salud cardiovascular en la rutina diaria: las estrategias de 7 especialistas para cuidar el corazón</li>
+            <hr>
+            <li>| El estrés crónico debilita el sistema inmune: cuáles son los síntomas para reconocerlo a tiempo</li>
+            <hr>
+            <li>| Cuándo la diarrea o el estreñimiento dejan de ser normales: señales de alarma a tener en cuenta</li>
         </ul>
     </div>
-    <p>Temas Relacionados</p>
-    <p><a href="#">Harinas</a><a href="#">Pan</a><a href="#">Beneficios para la salud</a><a href="#">Nutrición</a><a href="#">Newsroom BUE</a><a href="#">Últimas noticias</a></p>
+    <p>+ Temas Relacionados</p>
+    <p>
+        <a class="temas-relacionados_a" href="#">Harinas</a>
+        <a class="temas-relacionados_a" href="#">Pan</a>
+        <a class="temas-relacionados_a" href="#">Beneficios para la salud</a>
+        <a class="temas-relacionados_a" href="#">Nutrición</a>
+        <a class="temas-relacionados_a" href="#">Newsroom BUE</a>
+        <a class="temas-relacionados_a" href="#">Últimas noticias</a>
+    </p>
     <hr>
     <div>
         <span>
@@ -147,7 +184,7 @@
     </div>
     <hr>
 
-    <div>
+    <div class="ultimas-noticias">
         <p>Últimas noticias</p>
         <hr>
         <div>
@@ -202,7 +239,7 @@
         <hr>
     </div>
 
-    <div>
+    <div class="mas-noticias">
         <div>
             <p>DEPORTES -></p>
             <p>El tenso cruce entre dos figuras del Real Madrid durante la derrota en la Champions League que dio que hablar: “Callate la boca”</p>
@@ -245,6 +282,34 @@
     </div>
 
     <hr>
+
+    <div>
+        <p>Lo Último | Argentina</p>
+        <hr>
+        <p>Ordenaron la pericia clave para resolver el caso de los ocho fetos en la clínica de Villa Ballester: el drama de la nena y el principal sospechoso</p>
+        <hr>
+        <p>Independiente Rivadavia recibirá a Deportivo La Guaira en busca de otro triunfo en la Copa Libertadores: hora, TV y formaciones</p>
+        <hr>
+        <p>Vélez enfrentará a Gimnasia y Tiro de Salta por el pase a los octavos de la Copa Argentina: hora, TV y formaciones</p>
+        <hr>
+        <p>Plazo fijo: cuánto hay que depositar en cada banco para ganar $300.000 por mes</p>
+        <hr>
+        <p>El inesperado acercamiento entre Gladys La Bomba Tucumana y Zunino en Gran Hermano: “¿Vos cuántos años tenés?“</p>
+    </div>
+
+    <div>
+        <p>Te recomendamos</p>
+        <hr>
+        <p>1 El inesperado acercamiento entre Gladys La Bomba Tucumana y Zunino en Gran Hermano: “¿Vos cuántos años tenés?“</p>
+        <hr>
+        <p>2 Qué frutas comer y cuáles evitar antes de dormir, según un cardiólogo</p>
+        <hr>
+        <p>3 Qué es la “joroba de búfalo” y por qué puede alertar sobre un grave problema de salud</p>
+        <hr>
+        <p>4 Cuáles son los frutos secos con menos calorías</p>
+        <hr>
+        <p>5 Colesterol en sangre: cuáles son los valores normales, qué significan y los mitos más comunes que persisten</p>
+    </div>
 
     <form action="/form" method="get">
         <p>FORMULARIO</p>
@@ -362,45 +427,57 @@
     <hr>
 
     <footer>
-        <div>
-            <img src="https://www.infobae.com/assets/images/logos/d23_logo_infobae_white.svg" alt="">
-            <p>Seguinos:</p>
-            <p><a href="#">f</a><a href="#">x</a><a href="#">ig</a></p>
-            <p><a href="#">y</a><a href="#">t</a><a href="#">in</a></p>
+        <div class="footer-div">
+            <div>
+                <img src="https://www.infobae.com/assets/images/logos/d23_logo_infobae_white.svg" alt="">
+                <p>Seguinos:</p>
+                <p>
+                    <a class="button-social-footer" href="#">f</a>
+                    <a class="button-social-footer" href="#">x</a>
+                    <a class="button-social-footer" href="#">ig</a>
+                </p>
+                <p>
+                    <a class="button-social-footer" href="#">y</a>
+                    <a class="button-social-footer" href="#">t</a>
+                    <a class="button-social-footer" href="#">in</a>
+                </p>
+            </div>
+            <div>
+                <p><strong>Secciones</strong></p>
+                <p>América</p>
+                <p>Colombia</p>
+                <p>España</p>
+                <p>Estados Unidos</p>
+                <p>México</p>
+                <p>Perú</p>
+                <p>Centroamérica</p>
+                <p>Últimas Noticias</p>
+                <p>RSS</p>
+            </div>
+            <div>
+                <p><strong>Contáctenos</strong></p>
+                <p>Redacción</p>
+                <p>Empleo</p>
+            </div>
+            <div>
+                <p><strong>Contacto comercial</strong></p>
+                <p>Argentina</p>
+                <p>Colombia</p>
+                <p>España</p>
+                <p>México</p>
+                <p>Perú</p>
+                <p>Media Kit</p>
+            </div>
+            <div>
+                <p><strong>Legales</strong></p>
+                <p>Términos y Condiciones</p>
+                <p>Política de Privacidad</p>
+            </div>
         </div>
         <div>
-            <p><strong>Secciones</strong></p>
-            <p>América</p>
-            <p>Colombia</p>
-            <p>España</p>
-            <p>Estados Unidos</p>
-            <p>México</p>
-            <p>Perú</p>
-            <p>Centroamérica</p>
-            <p>Últimas Noticias</p>
-            <p>RSS</p>
+            <hr>
+            <p>Todos Los Derechos Reservados © 2026 Infobae</p>
         </div>
-        <div>
-            <p><strong>Contáctenos</strong></p>
-            <p>Redacción</p>
-            <p>Empleo</p>
-        </div>
-        <div>
-            <p><strong>Contacto comercial</strong></p>
-            <p>Argentina</p>
-            <p>Colombia</p>
-            <p>España</p>
-            <p>México</p>
-            <p>Perú</p>
-            <p>Media Kit</p>
-        </div>
-        <div>
-            <p><strong>Legales</strong></p>
-            <p>Términos y Condiciones</p>
-            <p>Política de Privacidad</p>
-        </div>
-        <hr>
-        <p>Todos Los Derechos Reservados © 2026 Infobae</p>
     </footer>
 
 </body>
