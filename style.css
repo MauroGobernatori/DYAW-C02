@@ -216,3 +216,163 @@ footer p{
 .button-social-footer:hover{
     background-color: #d5d5d5;
 }
+
+.a-link{
+    text-decoration: none;
+    color: black;
+}
+
+.seguir{
+    display: flex;
+    justify-content: space-around;
+}
+
+.seguir_a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 15px;
+    height: 40px;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+@media (max-width:767px){
+    body{
+        /* margin: 0px; */
+    }
+
+    header{
+        display: none;
+    }
+
+    #lista-titulo{
+        display: flex;
+        overflow-x: auto;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #lista-titulo #lista-titulo-01{
+        display: none;
+    }
+
+    #lista-titulo #lista-titulo-02{
+        flex-shrink: 0;
+    }
+
+    .social-inicio{
+        display: grid;
+        justify-items: center;
+    }
+
+    .social-inicio-01{
+        font-size: 90%;
+    }
+
+    .img-noticia{
+        width: 100%;
+    }
+
+    figure{
+        margin: 0px;
+    }
+
+    .publicidad-medio{
+        display: none;
+    }
+
+    main{
+        line-height: 1.6;
+    }
+
+    .seguir-leyendo{
+        font-weight: bold;
+    }
+
+    .seguir-leyendo *{
+        padding: 0 15px;
+    }
+
+    .temas-relacionados{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .temas-relacionados_a{
+        margin: 0px 10px 10px 0px;
+    }
+
+    .seguir{
+        display: block;
+    }
+
+    .seguir>*{
+        padding: 5px;
+    }
+
+    .ultimas-noticias>p{
+        justify-self: left;
+        border-bottom: 2px solid orange;
+    }
+
+    .ultimas-noticias div{
+        display: block;
+    }
+
+    .mas-noticias{
+        display: block;
+    }
+
+    .mas-noticias_titulo{
+        text-align: center;
+        background-color: #f5f5f5;
+        padding: 20px 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .lo-ultimo, .te-recomendamos{
+        border: 2px solid #eaeaea;
+        border-radius: 5px;
+    }
+
+    .lo-ultimo>*, .te-recomendamos>*{
+        padding: 0 10px;
+    }
+
+    .lo-ultimo_titulo, .te-recomendamos_titulo{
+        border-bottom: 2px solid orange;
+        padding: 10px 10px;
+        margin: 10px;
+    }
+
+    footer{
+        
+    }
+
+    .footer-div{
+        display: block;
+        padding: 25px 0 0 0;
+    }
+
+    .footer-div_div{
+        text-align: center;
+    }
+
+    .footer-div_div_div{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    .footer-div_div_div p{
+        padding: 0px 10px;
+    }
+
+    .footer-div_div_img{
+        justify-self: center;
+    }
+}
